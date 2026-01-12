@@ -1,3 +1,7 @@
-let c = ["Arif","Huseyin","Nazar"]
-text.sort((a,b) => a - b)
-console.log(c);
+let a = ["js", "front", "array", "html", "css"];
+
+let result = a.map(word =>
+  word.split("").reverse().join("")
+);
+
+console.log(result);
