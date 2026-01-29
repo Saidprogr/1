@@ -1,31 +1,20 @@
+//task 1
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    console.log("ENTER");
+  }
+});
+  //task 1 E.Mail
+  const form = document.getElementById("myForm");
 
-const studentsData = [
-    "Nolon",
-    "Said",
-    "Ruslan",
-    "Rustam",
-    "Ali",
-    "Salah",
-    "Valeh",
-    "Sakir",
-    "Ramazan",
-    "Nazar",
-    "Israfil",
-    "Subhan",
-    "Revan"
-];
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // səhifənin yenilənməsinin qarşısını alır
 
-let currentIndex = 0;
+  const password = document.getElementById("password").value;
 
-function addStudent() {
-    const list = document.getElementById('student-list');
-
-    if (currentIndex < studentsData.length) {
-        const newEntry = document.createElement('li');
-        newEntry.textContent = studentsData[currentIndex];
-        list.appendChild(newEntry);
-        currentIndex++;
-    } else {
-        alert("Bütün iştirakçılar siyahıya əlavə edildi.");
-    }
-}
+  if (password.length > 5) {
+    console.log("İcazə verildi");
+  } else {
+    console.log("kod 5 simvoldan asagirdir zehmet olmasa yeniden dineyin");
+  }
+});

@@ -1,31 +1,35 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootcamp Anlayis</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Form Validasiya</title>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>List of bootcamp participants:</h1>
-            <p>The list is randomly generated, any matches are random.</p>
-        </header>
-        
-        <ul id="student-list">
-            <li>Andrey Sitnik</li>
-            <li>Charlie Gerard</li>
-            <li>Alex Blom</li>
-            <li>Emma Brillhart</li>
-        </ul>
+  <h2>Qeydiyyat Formu</h2>
 
-        <div class="button-area">
-            <button onclick="addStudent()">Tələbə Əlavə Et</button>
-        </div>
-    </div>
+  <form id="myForm">
+    <label>
+      Yaş:
+      <input type="number" id="age" required>
+    </label>
+    <br><br>
 
-    <script src="script.js"></script>
+    <label>
+      E-mail:
+      <input type="email" id="email" required>
+    </label>
+    <br><br>
+
+    <label>
+      Parol:
+      <input type="password" id="password" required>
+    </label>
+    <br><br>
+
+    <button type="submit">Göndər</button>
+  </form>
+
+  <script src="./app.js"></script>
 </body>
 </html>
